@@ -1,0 +1,14 @@
+{
+	"ret": {
+		"Risk":            "Risk",
+		"Communications":  "Communications",
+		"Information":     "Information",
+		"Overview":        "Risk Overview",
+		"Title":           "More info",
+		"Message":         "Message",
+		"Submit":          "Submit",
+		"Placeholder":     "Write message...",
+		"Filter":          "Filter",
+		"Departments":     "All departments"
+	}
+}

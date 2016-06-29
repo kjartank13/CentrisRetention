@@ -1,0 +1,22 @@
+<div class="riskgraph">
+
+	<div class="row" ng-hide="loadingData">
+		<div class="col-xs-12">
+			<uib-alert type="info">
+				<span translate="Loading" />
+			</uib-alert>
+		</div>
+	</div>
+
+	<canvas ng-hide="!loadingData" id="riskchart"
+		class="chart chart-line"
+		chart-data="data"
+		chart-labels="labels"
+		chart-legend="false"
+		chart-series="series"
+		chart-click="onClick"
+		chart-options="chart_options">
+		<p>Your browser doesn't support the canvas feature</p>
+	</canvas>
+
+</div>

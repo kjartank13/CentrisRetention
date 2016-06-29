@@ -1,0 +1,64 @@
+<div class="col-xs-12 col-sm-6 col-lg-3">
+	<centris-department-dropdown
+		sub-departments="false"
+		ng-model="DepartmentID"
+		allow-clear="false"
+		on-update-department="updateDepartment(department)"
+		json-dep-placeholder="Department"
+		all-departments="true"
+		all-departments-placeholder="{{'ret.Departments' | translate}}">
+	</centris-department-dropdown>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-lg-3">
+	<div uib-dropdown>
+		<button class="btn btn-default"
+			uib-dropdown-toggle
+			type="button"
+			id="dropdownMenu1"
+			data-toggle="dropdown"
+			aria-haspopup="true"
+			aria-expanded="true">
+			{{"ret.Filter" | translate}}
+			<span class="caret"></span>
+		</button>
+		<ul class="uib-dropdown-menu"
+			uib-dropdown-menu
+			aria-labelledby="dropdownMenu1">
+			<li><a href="#" ng-click="switchSelected(filter)" ng-repeat="filter in filterOptions">{{filter}}</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="row" ng-hide="loadingData">
+	<div class="col-xs-12">
+		<uib-alert type="info">
+			<span translate="Loading" />
+		</uib-alert>
+	</div>
+</div>
+
+<div ng-hide="!loadingData" class="retentionlist">
+	<div>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th data-columnName="Name">{{"Name" | translate}}</th>
+							<th data-columnName="SSN">{{"SSN" | translate}}</th>
+							<th data-columnName="RiskFactor">{{"ret.Risk" | translate}}</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-clickable" ng-repeat="s in students">
+							<td><a href="/#/retention/{{s.SSN}}">{{s.Name}}</a></td>
+							<td><a href="/#/retention/{{s.SSN}}">{{s.SSN}}</a></td>
+							<td><a href="/#/retention/{{s.SSN}}">{{s.RiskFactor}}%</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
