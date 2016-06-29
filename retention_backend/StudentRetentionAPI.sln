@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRetentionAPI", "StudentRetentionAPI\StudentRetentionAPI.csproj", "{F55FE53D-F0C5-4DBE-9A1D-5B446D2EFB32}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B854A05-18BF-4F5F-B965-4DE5E1EAAC48} = {0B854A05-18BF-4F5F-B965-4DE5E1EAAC48}
+		{B7800E99-17AA-489E-97C1-DF7C3664642F} = {B7800E99-17AA-489E-97C1-DF7C3664642F}
+		{8A2D82B3-1447-4EE9-A291-D96BC7D599A8} = {8A2D82B3-1447-4EE9-A291-D96BC7D599A8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRetentionAPI.Tests", "StudentRetentionAPI.Tests\StudentRetentionAPI.Tests.csproj", "{1212DC2F-1A0F-4AAD-A749-EB61E08FDCA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRetentionAPI.Models", "StudentRetentionAPI.Models\StudentRetentionAPI.Models.csproj", "{0B854A05-18BF-4F5F-B965-4DE5E1EAAC48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRetentionAPI.Services", "StudentRetentionAPI.Services\StudentRetentionAPI.Services.csproj", "{8A2D82B3-1447-4EE9-A291-D96BC7D599A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRetention.Listener", "StudentRetention.Listener\StudentRetention.Listener.csproj", "{B7800E99-17AA-489E-97C1-DF7C3664642F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F55FE53D-F0C5-4DBE-9A1D-5B446D2EFB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55FE53D-F0C5-4DBE-9A1D-5B446D2EFB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55FE53D-F0C5-4DBE-9A1D-5B446D2EFB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55FE53D-F0C5-4DBE-9A1D-5B446D2EFB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1212DC2F-1A0F-4AAD-A749-EB61E08FDCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1212DC2F-1A0F-4AAD-A749-EB61E08FDCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1212DC2F-1A0F-4AAD-A749-EB61E08FDCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1212DC2F-1A0F-4AAD-A749-EB61E08FDCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B854A05-18BF-4F5F-B965-4DE5E1EAAC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B854A05-18BF-4F5F-B965-4DE5E1EAAC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B854A05-18BF-4F5F-B965-4DE5E1EAAC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B854A05-18BF-4F5F-B965-4DE5E1EAAC48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A2D82B3-1447-4EE9-A291-D96BC7D599A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2D82B3-1447-4EE9-A291-D96BC7D599A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2D82B3-1447-4EE9-A291-D96BC7D599A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2D82B3-1447-4EE9-A291-D96BC7D599A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7800E99-17AA-489E-97C1-DF7C3664642F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7800E99-17AA-489E-97C1-DF7C3664642F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7800E99-17AA-489E-97C1-DF7C3664642F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7800E99-17AA-489E-97C1-DF7C3664642F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
